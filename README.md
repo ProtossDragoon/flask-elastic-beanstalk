@@ -25,6 +25,7 @@
 ```bash
 git clone https://github.com/ProtossDragoon/flask-elastic-beanstalk.git
 cd flask-elastic-beanstalk
+rm -r .elasticbeanstalk
 ```
 
 2. python 가상 환경(venv 사용)을 생성하고 소싱(sourcing)합니다.
