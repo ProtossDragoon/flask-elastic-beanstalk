@@ -36,7 +36,7 @@ source ~/.eb/bin/activate
 make all
 ```
 
-**NOTE**: `awsebcli` 는 `requirements.txt` 를 통해 설치됩니다. [AWS Elastic Beanstalk CLI 설치 공식 문서](https://docs.aws.amazon.com/ko_kr/elasticbeanstalk/latest/dg/eb-cli3-install-advanced.html)를 통해 관련 내용을 확인할 수 있습니다.
+**NOTE**: `awsebcli` 는 `requirements.txt` 를 통해 설치됩니다. [AWS Elastic Beanstalk CLI 설치 공식 문서](https://docs.aws.amazon.com/ko_kr/elasticbeanstalk/latest/dg/eb-cli3-install-advanced.html)를 통해 관련 내용을 확인할 수 있습니다. <br>
 **NOTE**: `make all` 을 실행하는 경우에는 `make lint`, `make test` 가 실행됩니다. 이들은 당연히 모두 `Makefile` 에 정의되어 있습니다.
 
 4. 새로운 Elastic Beanstalk 애플리케이션을 초기화합니다.
@@ -45,7 +45,7 @@ make all
 eb init -p python-3.7 flask-continuous-delivery --region us-east-1
 ```
 
-**NOTE**: SSH를 통해 애플리케이션을 실행하는 EC2 인스턴스에 연결하고 싶은 경우에만 ssh key  생성을 위해 `eb init` 을 한번 더 실행하세요.
+**NOTE**: SSH를 통해 애플리케이션을 실행하는 EC2 인스턴스에 연결하고 싶은 경우에만 ssh key  생성을 위해 `eb init` 을 한번 더 실행하세요. <br>
 **NOTE**: `flask-continuous-delivery` 대신 임의의 애플리케이션 이름을 사용한다면, `Makefile` 파일의 `eb deploy` 뒤 내용을 변경해 주는 것을 잊지 마세요. (잠시 후에도 확인하겠지만, `buildspec.yml` 파일이 make 명령어를 실행합니다. make 명령어에 대해서는 `Makefile` 에 명세되어 있습니다. `eb deploy` 명령어에 대한 자세한 내용은 [공식 문서](https://docs.aws.amazon.com/ko_kr/elasticbeanstalk/latest/dg/eb3-deploy.html)를 참고하세요)
 
 5. 리모트 Elastic Beanstalk 인스턴스를 생성합니다.
