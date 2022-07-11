@@ -23,8 +23,8 @@
 1. Cloud9 등을 이용해 이 저장소를 clone 하고 작업 디렉터리를 변경합니다.
 
 ```bash
-git clone https://github.com/ProtossDragoon/Flask-Elastic-Beanstalk.git
-cd Flask-Elastic-Beanstalk
+git clone https://github.com/ProtossDragoon/flask-elastic-beanstalk.git
+cd flask-elastic-beanstalk
 ```
 
 2. python 가상 환경(venv 사용)을 생성하고 소싱(sourcing)합니다.
