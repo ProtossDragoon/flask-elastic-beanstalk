@@ -13,8 +13,7 @@
 - **AWS Elastic Beanstalk** 는 AWS 에서 애플리케이션을 배포하는 일의 대부분을 간소화하여 제공하는 고수준의 (high level) 서비스형 플랫폼 (PaaS) 입니다. **AWS EC2 인스턴스** 를 포함하여, 인스턴스 보안 그룹, 로드 밸런서, 로드 밸런서 보안 그룹, 오토스케일링 그룹, Amazon S3 버킷, Amazon CloudWatch 경보, AWS CloudFormation 스택, 도메인 이름, 이러한 모든 리소스들을 전부 Elastic Beanstalk 에서 관리합니다.
 - **AWS Cloud9** 는 클라우드 IDE 로, **AWS EC2 인스턴스** 에 연결해 사용합니다.
 - **Flask** 는 파이썬 기반의 오픈 소스 백엔드 프레임워크입니다. 
-- **AWS Code Build** 는 [CI/CD 를 가능](https://aws.amazon.com/ko/codebuild/features/?nc=sn&loc=2)하게 하는 ['완전 관리형' 빌드 서비스](https://docs.aws.amazon.com/ko_kr/codebuild/latest/userguide/welcome.html)입니다. [예를 들어](https://github.com/aws-actions/aws-codebuild-run-build), [**Github Action**](https://github.com/features/actions)을 통해 코드가 변경되었을 때마다 자동적으로 클라우드에서 빌드 및 테스트 작업을 진행할 수 있도록 만드는 데 사용됩니다.
-- 따라서, 이 저장소는 간단한 AWS Elastic Beanstalk 환경에 Flask 애플리케이션을 배포하는 방법을 안내합니다. Github Action 은 사용하지 않습니다.
+- **AWS Code Build** 는 [CI/CD 를 가능](https://aws.amazon.com/ko/codebuild/features/?nc=sn&loc=2)하게 하는 ['완전 관리형' 빌드 서비스](https://docs.aws.amazon.com/ko_kr/codebuild/latest/userguide/welcome.html)입니다.
 
 ## AWS Cloud9 + AWS Code Build 을 이용한 배포
 
