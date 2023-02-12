@@ -51,7 +51,7 @@ eb create flask-continuous-delivery-env
 ```
 
 6. `buildspec.yml` 파일을 통해 AWS Code Build 프로젝트를 세팅합니다. 이 저장소에는 이미 `buildspec.yml` 파일이 간단히 작성되어 있습니다. 파일을 설정하는 다양한 방법은 [공식 문서](https://docs.aws.amazon.com/ko_kr/codebuild/latest/userguide/build-spec-ref.html)에서 자세히 확인할 수 있습니다.
-7. 추가적으로, [이 프로젝트](https://github.com/noahgift/flask-ml-azure-serverless)처럼 머신러닝 엔지니어링 프로젝트로 변신시키기를 진행해 봅니다.
+7. [4장에서 실습했던 내용](https://github.com/ProtossDragoon/flask-docker-onnx-azure)처럼 머신러닝 엔지니어링 프로젝트로 변신시키기를 진행해 봅니다.
 
 ## 기타 참고할만한 자료들
 
