@@ -4,7 +4,7 @@
 
 ## 핵심 개념
 
-![eb-deploy-kr](https://user-images.githubusercontent.com/46595649/178249376-491d7d9e-1532-47fe-9c12-60c24b31dbd7.png)
+![eb-deploy-kr](https://user-images.githubusercontent.com/46595649/218323591-4c5583d3-83aa-4ac6-a488-9f3686738b4f.png)
 
 - **AWS Elastic Beanstalk** 는 AWS 에서 애플리케이션을 배포하는 일의 대부분을 간소화하여 제공하는 고수준의 (high level) 서비스형 플랫폼 (PaaS) 입니다. **AWS EC2 인스턴스** 를 포함하여, 인스턴스 보안 그룹, 로드 밸런서, 로드 밸런서 보안 그룹, 오토스케일링 그룹, Amazon S3 버킷, Amazon CloudWatch 경보, AWS CloudFormation 스택, 도메인 이름, 이러한 모든 리소스들을 전부 Elastic Beanstalk 에서 관리합니다.
 - **AWS Cloud9** 는 클라우드 IDE 로, **AWS EC2 인스턴스** 에 연결해 사용합니다.
