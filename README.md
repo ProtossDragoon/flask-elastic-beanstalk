@@ -2,10 +2,6 @@
 
 이 저장소는 한빛미디어의 <실전 MLOps> *(Noah Gift, \<Practical MLOps\>, O'Reilly)* 한국 독자들을 위해 번역과 설명이 추가된 저장소입니다. *참고: [원저자의 저장소](https://github.com/noahgift/Flask-Elastic-Beanstalk)*
 
-- 이 저장소를 포크해 사용하기를 권장합니다.
-- 포크한 뒤 `.elasticbeanstalk` 디렉터리를 제거하세요. 
-- 잠시 후 `eb init` 커맨드를 사용하면 해당 디렉터리 및 하위 파일들이 다시 생겨나기 때문입니다.
-
 ## 핵심 개념
 
 ![eb-deploy-kr](https://user-images.githubusercontent.com/46595649/178249376-491d7d9e-1532-47fe-9c12-60c24b31dbd7.png)
@@ -15,11 +11,11 @@
 - **Flask** 는 파이썬 기반의 오픈 소스 백엔드 프레임워크입니다. 
 - **AWS Code Build** 는 [CI/CD 를 가능](https://aws.amazon.com/ko/codebuild/features/?nc=sn&loc=2)하게 하는 ['완전 관리형' 빌드 서비스](https://docs.aws.amazon.com/ko_kr/codebuild/latest/userguide/welcome.html)입니다.
 
-## AWS Cloud9 + AWS Code Build 을 이용한 배포
+## AWS Code Build 와 AWS Elastic Beanstalk 을 이용한 배포
 
 [AWS 공식 플라스크 Elastic Beanstalk 튜토리얼](https://docs.aws.amazon.com/ko_kr/elasticbeanstalk/latest/dg/create-deploy-python-flask.html)을 참고해도 좋습니다. 프리티어를 사용하는 경우 과금되지 않습니다.
 
-1. Cloud9 등을 이용해 이 저장소를 clone 하고 작업 디렉터리를 변경합니다.
+1. Cloud9 등을 이용해 이 저장소를 clone 하고 작업 디렉터리를 변경합니다. `.elasticbeanstalk` 디렉터리를 제거하세요. 잠시 후 `eb init` 커맨드를 사용하면 해당 디렉터리 및 하위 파일들이 다시 생겨나기 때문입니다.
 
 ```bash
 git clone https://github.com/ProtossDragoon/flask-elastic-beanstalk.git
