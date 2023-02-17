@@ -1,10 +1,9 @@
 # flask-elastic-beanstalk
 
-이 저장소는 한빛미디어의 <실전 MLOps> *(Noah Gift, \<Practical MLOps\>, O'Reilly)* 한국 독자들을 위해 번역과 설명이 추가된 저장소입니다. *참고: [원저자의 저장소](https://github.com/noahgift/Flask-Elastic-Beanstalk)*
+이 저장소는 한빛미디어의 <실전 MLOps> *(Noah Gift & Alfredo Deza, \<Practical MLOps\>, O'Reilly)* 한국 독자들을 위해 번역과 설명이 추가된 저장소입니다. 
 
-- 이 저장소를 포크해 사용하기를 권장합니다.
-- 포크한 뒤 `.elasticbeanstalk` 디렉터리를 제거하세요. 
-- 잠시 후 `eb init` 커맨드를 사용하면 해당 디렉터리 및 하위 파일들이 다시 생겨나기 때문입니다.
+- [원저자 소스코드](https://github.com/noahgift/Flask-Elastic-Beanstalk)
+- [소스코드 길라잡이](https://github.com/ProtossDragoon/practical-mlops)
 
 ## 핵심 개념
 
@@ -20,7 +19,9 @@
 
 [AWS 공식 플라스크 Elastic Beanstalk 튜토리얼](https://docs.aws.amazon.com/ko_kr/elasticbeanstalk/latest/dg/create-deploy-python-flask.html)을 참고해도 좋습니다. 프리티어를 사용하는 경우 과금되지 않습니다.
 
-1. Cloud9 등을 이용해 이 저장소를 clone 하고 작업 디렉터리를 변경합니다.
+1. Cloud9 등을 이용해 이 저장소를 clone 하고 작업 디렉터리를 변경합니다. 
+
+**NOTE**: 포크한 뒤 `.elasticbeanstalk` 디렉터리를 제거하세요. 잠시 후 `eb init` 커맨드를 사용하면 해당 디렉터리 및 하위 파일들이 다시 생겨나기 때문입니다.
 
 ```bash
 git clone https://github.com/ProtossDragoon/flask-elastic-beanstalk.git
@@ -54,6 +55,8 @@ eb init -p python-3.7 flask-continuous-delivery --region us-east-1
 ```bash
 eb create flask-continuous-delivery-env
 ```
+
+**NOTE**: 만약 Elastic Beanstalk 인스턴스 생성이 처음이라면, [이슈](https://github.com/aws/aws-elastic-beanstalk-cli/issues/26#issuecomment-791604066)에 따라 정책을 부여해야 합니다. AWS Identity and Access Management(IAM) 의 [정책 페이지](https://us-east-1.console.aws.amazon.com/iamv2/home#/policies)에서 [역할을 생성할 수 있는 정책(CreateRole)](https://docs.aws.amazon.com/ko_kr/IAM/latest/UserGuide/id_roles_create_for-service.html)을 추가하고 [역할 페이지](https://us-east-1.console.aws.amazon.com/iamv2/home?region=us-east-1#/roles)에서 
 
 6. `buildspec.yml` 파일을 통해 AWS Code Build 프로젝트를 세팅합니다. 이 저장소에는 이미 `buildspec.yml` 파일이 간단히 작성되어 있습니다. 파일을 설정하는 다양한 방법은 [공식 문서](https://docs.aws.amazon.com/ko_kr/codebuild/latest/userguide/build-spec-ref.html)에서 자세히 확인할 수 있습니다.
 7. 추가적으로, [이 프로젝트](https://github.com/noahgift/flask-ml-azure-serverless)처럼 머신러닝 엔지니어링 프로젝트로 변신시키기를 진행해 봅니다.
