@@ -1,9 +1,7 @@
 # flask-elastic-beanstalk
 
-이 저장소는 한빛미디어의 <실전 MLOps> *(Noah Gift & Alfredo Deza, \<Practical MLOps\>, O'Reilly)* 한국 독자들을 위해 번역과 설명이 추가된 저장소입니다. 
-
 - [원저자 소스코드](https://github.com/noahgift/Flask-Elastic-Beanstalk)
-- [소스코드 길라잡이](https://github.com/ProtossDragoon/practical-mlops)
+- [『MLOps 실전 가이드』 소스코드 길라잡이](https://github.com/ProtossDragoon/practical-mlops)
 
 ## 핵심 개념
 
